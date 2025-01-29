@@ -1,0 +1,62 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: ;
+}
+header{
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+h2{
+    color: #4caf50;
+}
+.property{
+    border: 1px solid#ccc;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+}
+.property img{
+    max-width: 100%;
+    height: auto;
+}
+.contacts{
+    border: 1px solid hsl(118, 72%, 50%);
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+} 
+footer{
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0px;
+    background-color: gold;
+    color: white;
+    font-size: 6px;
+    font-weight: bold;
+    animation: blink 1s infinite;
+}
+/*blinking animation*/
+@-o-keyframes blink{
+0%, 50% {
+    opacity: 1;
+ }
+  50%{
+    opacity: 0;
+ }
+}
+@media (max-width: 600px) {
+    body {
+        font-size: 14px; /* smaller font size for mobile*/    
+    }
+    header{
+        padding: 5px 0; /* Less padding for mobile*/
+    }
+    .property{
+        margin: 10px; /* Less margin for property cards*/
+    }
+}
